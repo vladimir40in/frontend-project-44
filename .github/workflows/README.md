@@ -1,3 +1,5 @@
+/[![Maintainability](https://api.codeclimate.com/v1/badges/a12a134aaec3393138aa/maintainability)](https://codeclimate.com/github/vladimir40in/frontend-project-44/maintainability)
+
 # Автоматические тесты
 
 После завершения всех шагов в проекте, вам станут доступны автоматические тесты. Тесты запускаются на каждый коммит - после завершения всех заданий в интерфейсе Хекслета, сделайте коммит, и тесты заработают автоматически.
