@@ -28,3 +28,10 @@ for (let i = 0; i < 3; i += 1) {
   }
 };
 console.log(`Congratulations, ${userName}!`);
+
+
+runGame([
+  {question: randomNumber, answer: isEven},
+  {question: randomNumber, answer: isEven},
+  {question: randomNumber, answer: isEven},
+], 'Answer "yes" if the number is even, otherwise answer "no".')
