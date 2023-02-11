@@ -4,7 +4,7 @@
 
   const isPrime = (checkingNumber) => {
   
-     for (let j = 2; j < checkingNumber; j ++) { 
+     for (let j = '2'; j < checkingNumber; j ++) { 
        if (checkingNumber % j === 0) {
         return 'no';
        }
