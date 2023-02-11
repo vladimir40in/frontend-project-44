@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import runGame from '../src/game.js';
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no"';
 const isEven = (randomNumber) => (randomNumber % 2 === 0 ? 'yes' : 'no');
