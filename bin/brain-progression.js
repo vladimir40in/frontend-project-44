@@ -16,7 +16,6 @@ for (let i = 0; i < 3; i += 1) {
     const forGameProgression = progression;
     forGameProgression[missingPosition] = '..';
 
-arrGame.push({question: String(forGameProgression), answer: String(missingNumber)}); 
+arrGame.push({question: String(forGameProgression.join(' ')), answer: String(missingNumber)}); 
 };
-
 runGame(arrGame, gameDescription);
