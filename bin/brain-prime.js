@@ -3,10 +3,10 @@ import runGame from '../src/game.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (checkingNumber) => {
-for (let j = '2'; j < checkingNumber; j ++) {
-   if (checkingNumber % j === 0) {
+   for (let j = '2'; j < checkingNumber; j++) {
+      if (checkingNumber % j === 0) {
       return 'no';
-      }
+   }
    }
    return 'yes';
 };

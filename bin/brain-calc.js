@@ -21,11 +21,10 @@ for (let i = 0; i < 3; i += 1) {
       break;
     case '*':
       resultCalc = firstNumber * secondNumber;
-    break;
-      default:
-       resultCalc = null;
+      break;
+    default:
+      resultCalc = null;
   }
   arrGame.push({ question: questionCalc, answer: String(resultCalc) });
 }
-
-runGame(arrGame, gameDescription)
+runGame(arrGame, gameDescription);
