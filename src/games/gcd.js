@@ -1,9 +1,9 @@
 import run from '../game.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-
+const GAMES_COUNT = 3;
 const arrGame = [];
-for (let i = 0; i < 3; i += 1) {
+for (let i = 0; i < GAMES_COUNT; i += 1) {
   let firstNumber = Math.floor(Math.random() * 500);
   let secondNumber = Math.ceil(Math.random() * 200);
   const questionGreatestDivisor = `${firstNumber} ${secondNumber}`;

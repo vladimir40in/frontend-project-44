@@ -1,8 +1,9 @@
 import run from '../game.js';
 
+const GAMES_COUNT = 3;
 const gameDescription = 'What number is missing in the progression?';
 const arrGame = [];
-for (let i = 0; i < 3; i += 1) {
+for (let i = 0; i < GAMES_COUNT; i += 1) {
   const startNumber = Math.floor(Math.random() * 20);
   const interval = Math.floor(Math.random() * 5 + 2);
   const progression = [];
