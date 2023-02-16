@@ -15,7 +15,7 @@ const runGame = (arrGame, gameDescription) => {
       const errorMessage = `'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${userName}!`;
       console.log(errorMessage);
       return;
-        }
+    }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
