@@ -3,7 +3,6 @@ import { genRandomInteger } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const generateQuestionAnswer = () => {
-
   const firstNumber = genRandomInteger(3, 30);
   const secondNumber = genRandomInteger(2, 20);
   const signs = ['+', '-', '*'];
@@ -25,7 +24,7 @@ const generateQuestionAnswer = () => {
       resultCalc = null;
   }
   return { question: questionCalc, answer: String(resultCalc) };
-}
+};
 
 export default () => {
   run(generateQuestionAnswer, gameDescription);

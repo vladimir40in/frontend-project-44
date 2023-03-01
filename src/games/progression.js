@@ -14,7 +14,7 @@ const generateQuestionAnswer = () => {
   const forGameProgression = progression;
   forGameProgression[missingPosition] = '..';
   return { question: String(forGameProgression.join(' ')), answer: String(missingNumber) };
-}
+};
 
 export default () => {
   run(generateQuestionAnswer, gameDescription);

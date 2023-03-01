@@ -12,8 +12,8 @@ const isPrime = (checkingNumber) => {
 };
 const generateQuestionAnswer = () => {
   const checkingNumber = genRandomInteger(3, 111);
-  return{ question: checkingNumber, answer: isPrime(checkingNumber) };
-}
+  return { question: checkingNumber, answer: isPrime(checkingNumber) };
+};
 
 export default () => {
   run(generateQuestionAnswer, gameDescription);
