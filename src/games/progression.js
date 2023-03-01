@@ -1,10 +1,8 @@
 import run from '../game.js';
 import { genRandomInteger } from '../utils.js';
 
-const GAMES_COUNT = 3;
 const gameDescription = 'What number is missing in the progression?';
-const arrGame = [];
-for (let i = 0; i < GAMES_COUNT; i += 1) {
+const generateQuestionAnswer = () => {
   const startNumber = genRandomInteger(2, 100);
   const interval = genRandomInteger(4, 8);
   const progression = [];
@@ -15,9 +13,9 @@ for (let i = 0; i < GAMES_COUNT; i += 1) {
   const missingNumber = progression[missingPosition];
   const forGameProgression = progression;
   forGameProgression[missingPosition] = '..';
-  arrGame.push({ question: String(forGameProgression.join(' ')), answer: String(missingNumber) });
+  return { question: String(forGameProgression.join(' ')), answer: String(missingNumber) };
 }
 
 export default () => {
-  run(arrGame, gameDescription);
+  run(generateQuestionAnswer, gameDescription);
 };

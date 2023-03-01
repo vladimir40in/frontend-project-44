@@ -2,9 +2,8 @@ import run from '../game.js';
 import { genRandomInteger } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
-const GAMES_COUNT = 3;
-const arrGame = [];
-for (let i = 0; i < GAMES_COUNT; i += 1) {
+const generateQuestionAnswer = () => {
+
   const firstNumber = genRandomInteger(3, 30);
   const secondNumber = genRandomInteger(2, 20);
   const signs = ['+', '-', '*'];
@@ -25,9 +24,9 @@ for (let i = 0; i < GAMES_COUNT; i += 1) {
     default:
       resultCalc = null;
   }
-  arrGame.push({ question: questionCalc, answer: String(resultCalc) });
+  return { question: questionCalc, answer: String(resultCalc) };
 }
 
 export default () => {
-  run(arrGame, gameDescription);
+  run(generateQuestionAnswer, gameDescription);
 };
