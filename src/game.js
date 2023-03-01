@@ -9,7 +9,7 @@ const runGame = (generateQuestionAnswer, gameDescription) => {
   console.log(gameDescription);
   for (let i = 0; i < GAMES_COUNT; i += 1) {
     const data = generateQuestionAnswer();
-    console.log(data.question);
+    console.log(`Question: ${data.question}`);
     const answerUser = readlineSync.question('Your answer: ');
     const correctAnswer = data.answer;
     if (correctAnswer !== answerUser) {
