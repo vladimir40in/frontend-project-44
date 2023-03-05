@@ -19,10 +19,9 @@ const generateQuestionAnswer = () => {
       break;
     default:
       resultCalc = null;
-  };
-        
+  }  
   const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
-    return { question: questionCalc, answer: String(resultCalc) };
+  return { question: questionCalc, answer: String(resultCalc) };
 };
 const gameDescription = 'What is the result of the expression?';
 export default () => run(generateQuestionAnswer, gameDescription);

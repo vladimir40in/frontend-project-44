@@ -6,8 +6,7 @@ const generateQuestionAnswer = () => {
   const interval = genRandomInteger(4, 8);
   const progression = [];
   const length = 9;
-  
-  for (let j = 0; j < length; j += 1) {
+    for (let j = 0; j < length; j += 1) {
     progression.push(startNumber + interval * j);
   }
 
