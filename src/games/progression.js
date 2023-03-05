@@ -9,7 +9,6 @@ const generateQuestionAnswer = () => {
   const missingPosition = genRandomInteger(1, 8);
   const missingNumber = progression[missingPosition];
   progression[missingPosition] = '..';
-  
   return { question: String(progression.join(' ')), answer: String(missingNumber) };
 };
 

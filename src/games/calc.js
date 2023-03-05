@@ -7,8 +7,10 @@ const generateQuestionAnswer = () => {
   const signs = ['+', '-', '*'];
   const sign = signs[genRandomInteger(0, 2)];
   const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
-     return { question: questionCalc,
-       answer: String(calculate(firstNumber, secondNumber, sign)) };
+  return {
+   question: questionCalc,
+   answer: String(calculate(firstNumber, secondNumber, sign)) 
+  };
 };
 
 const gameDescription = 'What is the result of the expression?';
