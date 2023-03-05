@@ -7,7 +7,7 @@ const generateQuestionAnswer = () => {
   const questionGreatestDivisor = `${firstNumber} ${secondNumber}`;
   return {
     question: questionGreatestDivisor,
-    answer: String(findGreatestDivisor(firstNumber, secondNumber));
+    answer: String(findGreatestDivisor(firstNumber, secondNumber)),
   };
 };
 
