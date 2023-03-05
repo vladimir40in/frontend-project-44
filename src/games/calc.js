@@ -1,16 +1,13 @@
 import run from '../game.js';
 import { genRandomInteger } from '../utils.js';
 
-const gameDescription = 'What is the result of the expression?';
 const generateQuestionAnswer = () => {
   const firstNumber = genRandomInteger(3, 30);
   const secondNumber = genRandomInteger(2, 20);
   const signs = ['+', '-', '*'];
   const sign = signs[genRandomInteger(0, 2)];
-  const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
-
   let resultCalc;
-  switch (sign) {
+  switch (firstNumber, secondNumber, sign) {
     case '+':
       resultCalc = firstNumber + secondNumber;
       break;
@@ -22,10 +19,10 @@ const generateQuestionAnswer = () => {
       break;
     default:
       resultCalc = null;
-  }
-  return { question: questionCalc, answer: String(resultCalc) };
+  };
+        
+  const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
+    return { question: questionCalc, answer: String(resultCalc) };
 };
-
-export default () => {
-  run(generateQuestionAnswer, gameDescription);
-};
+const gameDescription = 'What is the result of the expression?';
+export default () => run(generateQuestionAnswer, gameDescription);
