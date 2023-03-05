@@ -8,8 +8,8 @@ const generateQuestionAnswer = () => {
   const sign = signs[genRandomInteger(0, 2)];
   const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
   return {
-   question: questionCalc,
-   answer: String(calculate(firstNumber, secondNumber, sign)) 
+    question: questionCalc,
+    answer: String(calculate(firstNumber, secondNumber, sign)),
   };
 };
 
