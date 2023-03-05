@@ -7,7 +7,7 @@ const generateQuestionAnswer = () => {
   const signs = ['+', '-', '*'];
   const sign = signs[genRandomInteger(0, 2)];
   let resultCalc;
-  switch (firstNumber, secondNumber, sign) {
+  switch (sign) {
     case '+':
       resultCalc = firstNumber + secondNumber;
       break;
@@ -19,7 +19,7 @@ const generateQuestionAnswer = () => {
       break;
     default:
       resultCalc = null;
-  }  
+  } 
   const questionCalc = `${firstNumber} ${sign} ${secondNumber}`;
   return { question: questionCalc, answer: String(resultCalc) };
 };

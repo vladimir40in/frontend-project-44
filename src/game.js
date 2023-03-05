@@ -13,7 +13,7 @@ const runGame = (generateQuestionAnswer, gameDescription) => {
     console.log(`Question: ${data.question}`);
     const answerUser = readlineSync.question('Your answer: ');
     const correctAnswer = data.answer;
-        if (correctAnswer !== answerUser) {
+    if (correctAnswer !== answerUser) {
       const errorMessage = `'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${userName}!`;
       console.log(errorMessage);
       return;
